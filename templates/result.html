@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BERT Sentiment Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F2F2F2;
+        }
+        
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 25px;
+        }
+        
+        a {
+            display: block;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #333333;
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 50px auto 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        a:hover {
+            background-color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <h1>BERT Sentiment Analysis Result</h1>
+    <p>The predicted sentiment is {{ prediction }}.</p>
+    <a href="{{ url_for('home') }}">Go back to the home page</a>
+</body>
+</html>
